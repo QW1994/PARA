@@ -1,14 +1,11 @@
-FWT_raw  = xlsread("Dataset\NIV-F-WT.xlsx");
+FWT_raw  = xlsread("C:\Users\LIULAB\Desktop\F-WT.xlsx");
 
 % modify the input file path & name here
-Input_raw_list = [
-    "Dataset\NIV-F-L53D.xlsx",...
-    "Dataset\NIV-F-L53D2.xlsx",...
-    "Dataset\NIV-F-L53D3.xlsx"
-]
+Input_raw_list = "C:\Users\LIULAB\Desktop\L53D.xlsx";
+
 
 % ouput path
-output_path = "D:\GithubRepository\PARA\RangeFilter\Output";
+output_path = "C:\Users\LIULAB\Desktop\Output";
 
 for i=1:length(Input_raw_list)
     Input_raw_path = Input_raw_list{i};

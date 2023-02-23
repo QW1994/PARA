@@ -101,7 +101,7 @@ clusterTable = [];
                     SizeROI = polyarea(roiHere(:,1), roiHere(:,2));
                     background_density = length(ROI_non_cluster) / SizeROI;
 
-
+                    disp("aaaaaaaaaaaaaaaaaa")
                     xlswrite(fullfile(Path_name, strcat('ROI_', sprintf('%d_', roiIter), 'non_cluster_', sprintf('Ch%d', Ch))), ROI_non_cluster);
                     % Points in ROI and in cluster
                     ROI_in_cluster = Data_DoC1(classOut~=0,:);

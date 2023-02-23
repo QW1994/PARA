@@ -58,12 +58,12 @@ def mark_data(file_path):
 
 
 # modify your path for data and file here
-root_path = "D:\GithubRepository\PARA\Clus/20220911/test\Clus-DoC Results"
+root_path = r"C:\Users\LIULAB\Desktop\PARA\Clus/20220911/test/Clus-DoC Results"
 file_list = [
-    "ROI_1_in_cluster_Ch1.xls",
-    "ROI_1_in_cluster_Ch2.xls",
-    "ROI_2_in_cluster_Ch1.xls",
-    "ROI_2_in_cluster_Ch2.xls"
+    "ROI_1_non_cluster_Ch1.xls",
+    "ROI_1_non_cluster_Ch2.xls",
+    "ROI_2_non_cluster_Ch1.xls",
+    "ROI_2_non_cluster_Ch2.xls"
 ]
 
 for item in file_list:

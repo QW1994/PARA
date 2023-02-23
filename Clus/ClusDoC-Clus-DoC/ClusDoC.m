@@ -2365,7 +2365,6 @@ function DBSCAN_All(~, ~, ~)
                                 );
                             % DBSCANHandle [datathr, ClusterSmooth, SumofContour, classOut, varargout] = DBSCANHandler(Data, DBSCANParams, varargin)
                             
-                            disp("Result:   ", Result)
 
                             handles.CellData{c}(whichPointsInROI & (handles.CellData{c}(:,12) == chan), handles.NDataColumns + 3) = classOut;
                             % Result is stats per ROI
@@ -2396,7 +2395,7 @@ function DBSCAN_All(~, ~, ~)
 
                 if ~all(cellfun(@isempty, Result)) % cellfun， apply func to each cell unit
                     % 导出excel，但是具体怎么导出需要细看
-                    ExportDBSCANDataToExcelFiles(cellROIPair, Result, strcat(handles.Outputfolder, '\DBSCAN Results'), chan);
+                    ExportDBSCANDataToExcelFiles_raw(cellROIPair, Result, strcat(handles.Outputfolder, '\DBSCAN Results'), chan);
                 else
                     fprintf(1, 'All cells and ROIs empty.  Skipping export.\n');
                 end

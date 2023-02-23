@@ -2,10 +2,10 @@
 """
 root_path = "D:\GithubRepository\PARA\Clus/20220911/test\Clus-DoC Results"
 file_list = [
-    "ROI_1_in_cluster_Ch1.xls",
-    "ROI_1_in_cluster_Ch2.xls",
-    "ROI_2_in_cluster_Ch1.xls",
-    "ROI_2_in_cluster_Ch2.xls"
+    "ROI_1_non_cluster_Ch1.xls",
+    "ROI_1_non_cluster_Ch2.xls",
+    "ROI_2_non_cluster_Ch1.xls",
+    "ROI_2_non_cluster_Ch2.xls"
 ]
 """
 root path is for the input data
@@ -24,7 +24,9 @@ line 21-25:
 change the number 10 to any other filter number x for selecting a co-localized group which has x points' doc > than 0.4
 
 3. how to run this script
-conda activate xxx
-python find_ColCluster.py
+left click in the empty space of the folder
+conda activate clus
+python find_ColCluster.py 
+# tips :  input several front letters such as  "fi" and tap "table buttom" on keyboard , this can help input the fullname automatic 
 
 or run this code in an IDE pycharm
