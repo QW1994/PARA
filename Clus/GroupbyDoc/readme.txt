@@ -1,16 +1,14 @@
+readme
+------------for find_ColCluster.py------------------------------------
+
 1. modify the path of input
 """
-root_path = "D:\GithubRepository\PARA\Clus/20220911/test\Clus-DoC Results"
-file_list = [
-    "ROI_1_non_cluster_Ch1.xls",
-    "ROI_1_non_cluster_Ch2.xls",
-    "ROI_2_non_cluster_Ch1.xls",
-    "ROI_2_non_cluster_Ch2.xls"
-]
+root_path = r"D:\GithubRepository\PARA\Clus\20220911\test\Clus-DoC Results\ROI_set"
+
 """
 root path is for the input data
-file_list is for the data name list
-result will be generated into a sub-folder in root_path named "after_col_mark"
+
+result will be generated into a sub-folder in root_path named "after_col_mark" under ROI_set
 
 2. modify parameter
 line 21-25:
@@ -24,9 +22,17 @@ line 21-25:
 change the number 10 to any other filter number x for selecting a co-localized group which has x points' doc > than 0.4
 
 3. how to run this script
-left click in the empty space of the folder
-conda activate clus
-python find_ColCluster.py 
-# tips :  input several front letters such as  "fi" and tap "table buttom" on keyboard , this can help input the fullname automatic 
+conda activate clus    # this step is to activate the environment
+python find_ColCluster.py    # this step is to run the script
 
 or run this code in an IDE pycharm
+
+------------------------for statistics.py----------------------------------
+identify the root_path in code
+root_path = r"D:\GithubRepository\PARA\Clus\20220911\test\Clus-DoC Results\ROI_set\after_col_mark"
+
+# run
+conda activate clus    # this step is to activate the environment
+python statistics.py    # this step is to run the script
+
+
