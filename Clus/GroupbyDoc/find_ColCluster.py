@@ -58,7 +58,7 @@ def mark_data(file_path):
 
 
 # modify your path for data and file here
-root_path = r"D:\GithubRepository\PARA\Clus\20220911\test\Clus-DoC Results\ROI_set"
+root_path = r"E:\Qian Wang\QW\testdata\20230131\1\clus_doc_file\Clus-DoC Results\ROI_set"
 
 depth = 1
 for root, dirs, files in os.walk(root_path):

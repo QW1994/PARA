@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import numpy as np
 
-root_path = r"D:\GithubRepository\PARA\Clus\20220911\test\Clus-DoC Results\ROI_set\after_col_mark"
+root_path = r"E:\Qian Wang\QW\testdata\20230131\1\clus_doc_file\Clus-DoC Results\ROI_set\after_col_mark"
 for root, dir, files in os.walk(root_path):
     for item in files:
         name = item.split('.')[0]
